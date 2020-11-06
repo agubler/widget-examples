@@ -21,14 +21,18 @@
 		"@dojo/cli-build-app": "~7.0.0",
 		"@dojo/cli-test-intern": "~7.0.0",
 		"@types/node": "~9.6.5",
+		"esbuild": "0.8.4",
+		"postcss-copy-assets": "0.3.1",
+		"postcss-modules": "3.2.2",
 		"prettier": "2.1.2",
-		"typescript": "~3.4.5"
+		"typescript": "~3.4.5",
+		"typescript-plugin-css-modules": "2.8.0"
 	},
-	  "prettier": {
-    "singleQuote": true,
-    "tabWidth": 4,
-    "useTabs": true,
-    "printWidth": 120,
-    "arrowParens": "always"
-  }
+	"prettier": {
+		"singleQuote": true,
+		"tabWidth": 4,
+		"useTabs": true,
+		"printWidth": 120,
+		"arrowParens": "always"
+	}
 }

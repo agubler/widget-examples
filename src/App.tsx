@@ -243,6 +243,7 @@ import TypeaheadBasic from './widgets/typeahead/Basic';
 import TypeaheadFreeText from './widgets/typeahead/FreeText';
 import TypeaheadRemoteSource from './widgets/typeahead/RemoteSource';
 import TypeaheadValidation from './widgets/typeahead/Validation';
+import * as css from './App.m.css';
 
 const factory = create({ theme });
 
@@ -251,9 +252,9 @@ export default factory(function App({ middleware: { theme } }) {
 		theme.set(dojo);
 	}
 	return (
-		<div classes="flex-grid">
-			<div classes={['col', 'sidebar']}>
-				<ul classes={'links'}>
+		<div classes={css.container}>
+			<div classes={[css.col, css.sidebar]}>
+				<ul classes={css.links}>
 					<li>
 						<Link to="main" params={{ widget: 'accordion', example: 'basic' }}>
 							accordion/basic
@@ -1541,7 +1542,7 @@ export default factory(function App({ middleware: { theme } }) {
 					</li>
 				</ul>
 			</div>
-			<div classes={['col', 'main']}>
+			<div classes={[css.col, css.main]}>
 				<Outlet id="main">
 					{{
 						main: (matchDetails) => {
