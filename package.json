@@ -1,0 +1,34 @@
+{
+	"name": "widget-examples",
+	"version": "1.0.0",
+	"scripts": {
+		"start": "dojo build --mode dev --watch --serve",
+		"build": "dojo build --mode dist",
+		"build:dev": "dojo build --mode dev",
+		"test": "dojo test",
+		"test:unit": "dojo build --mode unit && dojo test --unit --config local",
+		"prettier": "prettier --write \"{docs,src,tests}/**/*.{ts,tsx,md}\"",
+		"test:functional": "dojo build --mode functional && dojo test --functional --config local",
+		"test:all": "dojo build --mode unit && dojo build --mode functional && dojo test --all --config local"
+	},
+	"dependencies": {
+		"@dojo/framework": "~7.0.0",
+		"@dojo/widgets": "^7.0.3",
+		"tslib": "~1.9.1"
+	},
+	"devDependencies": {
+		"@dojo/cli": "~7.0.0",
+		"@dojo/cli-build-app": "~7.0.0",
+		"@dojo/cli-test-intern": "~7.0.0",
+		"@types/node": "~9.6.5",
+		"prettier": "2.1.2",
+		"typescript": "~3.4.5"
+	},
+	  "prettier": {
+    "singleQuote": true,
+    "tabWidth": 4,
+    "useTabs": true,
+    "printWidth": 120,
+    "arrowParens": "always"
+  }
+}
